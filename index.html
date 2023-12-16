@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Public/css/font.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-700">
+    <div class="grid grid-cols-2 gap-4">
+        <div class="col-span-1 p-4">
+            <div class="">
+                <label for="nombre_card" class="block mb-2 text-sm font-medium text-gray-900">Nombre:</label>
+                <input type="text" id="txtCartaNombre" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+            </div>
+            <div id="grupoCartas">
+                <label for="Carta_base" class="block mb-2 text-sm font-medium text-gray-900">Tipo de carta:</label>
+                <select id="Carta_base" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                    <option selected value="normal">Normal</option>
+                    <option value="efecto">Efecto</option>
+                    <option value="magia">Magia</option>
+                    <option value="trampa">Trampa</option>
+                    <option value="fusion">Fusión</option>
+                    <option value="ritual">Ritual</option>
+                    <option value="sincro">Sincronía</option>
+                    <option value="xyz">XYZ</option>
+                    <option value="link">Link</option>
+                    <option value="ficha">Ficha</option>
+                    <option value="habilidad">Habilidad</option>
+                </select>
+            </div>
+            <div id="grupoAtributos">
+                <label for="Carta_atributo" class="block mb-2 text-sm font-medium text-gray-900">Atributo:</label>
+                <select id="Carta_atributo" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 ">
+                    <option selected value="luz">Luz</option>
+                    <option value="oscuridad">Oscuridad</option>
+                    <option value="fuego">Fuego</option>
+                    <option value="tierra">Tierra</option>
+                    <option value="agua">Agua</option>
+                    <option value="viento">Viento</option>
+                    <option value="divinidad">Divino</option>
+                </select>
+            </div>
+            <div class="">
+                <label for="Card_nombre" class="block mb-2 text-sm font-medium text-gray-900">Nombre:</label>
+                <input type="text" id="Card_nombre" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5" required>
+            </div>
+        </div>
+        <div class="col-span-1 relative m-4 ">
+            <h1 id="Carta-nombre" class="font-Nombre absolute top-6 left-8 text-4xl z-50"></h1>
+            <img width="500" height="1013" src="./Public/Img/borde_normal.png" alt="">
+            <img id="cartaImagen" width="500" height="1013" class="absolute top-0 left-0 z-0"  alt="">
+            <img id="atributoImagen" width="500" height="1013" class="absolute top-0 left-0 z-0"  alt="">
+        </div>
+    </div>
+    
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"></script>
+<script src="/Public/js/form.js"></script>
+
+</html>
